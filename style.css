@@ -1,0 +1,285 @@
+/***** GENERAL STYLING START  ****/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eff5fd;
+    font-family: 'Lato',
+        sans-serif;
+    color: #0f307d;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+#viewport2,
+#viewport3 {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+#front-form,
+#front-preview,
+#back-form,
+#back-preview {
+    width: 50%;
+}
+
+#img-container,
+#border-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-choice,
+.border-choice {
+    width: 20%;
+    border-radius: 8px;
+}
+
+h2,
+#front-message-preview {
+    font-family: 'Raleway',
+        sans-serif;
+}
+
+input,
+label,
+p,
+h2,
+select,
+input[type="button"],
+textarea,
+a {
+    padding: 1.5%;
+}
+
+input,
+select,
+textarea {
+    margin: 1.2%;
+    width: 70%;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Lato',
+        sans-serif;
+    font-size: 1vw;
+    color: #698eb8;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #698eb8;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus,
+.img-choice:hover,
+.border-choice:hover {
+    transition: 0.08s;
+    transition-timing-function: ease-in-out;
+    border: #a50606 2px solid;
+    outline: none;
+}
+
+a,
+h2,
+label {
+    display: block;
+    margin: auto;
+}
+
+#color-choice {
+    width: 5vw;
+    height: 8vh;
+    background-color: #efefef;
+}
+
+
+/* BUTTONS STYLE START */
+
+a {
+    text-decoration: none;
+}
+
+
+#submit-btn,
+#back-btn {
+    display: inline-block;
+
+}
+
+.main-btn {
+    width: 20%;
+    background-color: #0f307d;
+    color: white;
+    border-radius: 8px;
+    margin: 2% auto;
+}
+
+.scnd-btn {
+    width: 20%;
+    border: 1px solid #0f307d;
+    color: #0f307d;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.scnd-btn:hover {
+    transition: 0.2s;
+    border: 2px solid #0f307d;
+    background-color: #0f307d;
+    color: white;
+}
+
+/* This button appears in mobile styling */
+#viewport2-btn-2 {
+    display: none;
+}
+
+/* BUTTONS STYLE END */
+
+/* FRONT PREVIEW STYLING START */
+
+#front-preview-container,
+#back-preview-container {
+    margin: 10% auto auto auto;
+    position: relative;
+    width: calc(25vw*1.4);
+    height: 25vw;
+    background-color: rgb(224, 224, 224);
+    background-size: cover;
+    word-wrap: break-word;
+}
+
+#front-message-preview {
+    position: absolute;
+    left: 20px;
+    margin-top: 2%;
+    font-size: 2em;
+    color: #da2222;
+    text-shadow: 2px 2px #0f307d;
+    word-wrap: break-word;
+}
+
+/* FRONT PREVIEW STYLING END */
+
+/* BACK FORM STYLING START */
+
+#back-message {
+    height: 15%;
+}
+
+#back-preview-container {
+    background-color: rgb(255, 254, 254);
+    display: flex;
+    font-size: 1.2vw;
+}
+
+#right-side,
+#left-side {
+    width: 50%;
+    background-color: rgb(255, 254, 254);
+    margin: 2% auto;
+}
+
+#right-side {
+    position: relative;
+    margin-right: 2%;
+}
+
+#left-side {
+    margin-left: 2%;
+}
+
+#back-message-preview {
+    border-right: 2px solid #0f307d;
+    height: 90%;
+    margin-top: 5%;
+    word-wrap: break-word;
+}
+
+#stamp {
+    width: 30%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+#sender,
+#recepient {
+    position: absolute;
+    border-bottom: 2px solid #0f307d;
+    height: 10%;
+    width: 80%;
+    margin: 5%;
+}
+
+#sender {
+    top: 30%;
+}
+
+#recepient {
+    top: 50%;
+}
+
+#submit-btn {
+    width: 30%;
+    padding: 1.8%;
+    margin: 5%;
+    font-weight: 700;
+}
+
+/* BACK FROM STYLING END */
+
+/* RESULT PAGE START */
+
+.make-another {
+    margin-top: 10%;
+}
+
+/* RESULT PAGE END */
+
+/***** GENERAL STYLING END ****/
+
+/***** MOBILE AND TABLET STYLING START ****/
+
+@media only screen and (max-width: 767px) {
+
+    #viewport2 {
+        display: block;
+    }
+
+    #front-form,
+    #front-preview {
+        width: 100%;
+    }
+
+    #your-preview,
+    #viewport2-btn {
+        display: none;
+    }
+
+    #viewport2-btn-2 {
+        display: block;
+        width: 70%;
+        margin-top: 5%;
+    }
+
+    #front-preview-container {
+        width: calc(60vw*1.4);
+        height: 60vw;
+    }
+}
+
+/***** MOBILE AND TABLET STYLING END ****/
