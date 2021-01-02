@@ -159,17 +159,18 @@ a {
     height: 25vw;
     background-color: rgb(224, 224, 224);
     background-size: cover;
-    word-wrap: break-word;
+    word-wrap:break-word;
+    overflow: hidden;
 }
 
 #front-message-preview {
     position: absolute;
+    display: block;
     left: 20px;
     margin-top: 2%;
     font-size: 2em;
     color: #da2222;
     text-shadow: 2px 2px #0f307d;
-    word-wrap: break-word;
 }
 
 /* FRONT PREVIEW STYLING END */
