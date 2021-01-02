@@ -147,6 +147,27 @@ a {
     display: none;
 }
 
+/* font-preview code*/
+
+#font-choice option {
+    font-size: 24px;
+}
+#font-choice option[value="Lato"] {
+    font-family: 'Lato', sans-serif;
+}
+
+#font-choice option[value="Cookie"] {
+    font-family: 'Cookie', cursive;
+}
+
+#font-choice option[value="Monoton"] {
+    font-family: 'Monoton', cursive;
+}
+
+#font-choice option[value="VT323"] {
+    font-family: 'VT323', monospace;
+}
+
 /* BUTTONS STYLE END */
 
 /* FRONT PREVIEW STYLING START */
@@ -169,8 +190,8 @@ a {
     left: 20px;
     margin-top: 2%;
     font-size: 2em;
-    color: #da2222;
-    text-shadow: 2px 2px #0f307d;
+    color: #0f307d;
+    word-wrap: break-word;
 }
 
 /* FRONT PREVIEW STYLING END */
@@ -284,3 +305,4 @@ a {
 }
 
 /***** MOBILE AND TABLET STYLING END ****/
+
