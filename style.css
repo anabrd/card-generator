@@ -180,11 +180,13 @@ a {
     height: 25vw;
     background-color: rgb(224, 224, 224);
     background-size: cover;
-    word-wrap: break-word;
+    word-wrap:break-word;
+    overflow: hidden;
 }
 
 #front-message-preview {
     position: absolute;
+    display: block;
     left: 20px;
     margin-top: 2%;
     font-size: 2em;
