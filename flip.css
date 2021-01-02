@@ -2,6 +2,8 @@ body {
     height: 100vh;
 }
 
+@media only screen {
+
 .flip-container {
     margin: auto;
     width: calc(25vw*1.4);
@@ -35,4 +37,33 @@ body {
 #back-preview-container {
     transform: rotateY(-180deg);
     background-color: transparent;
+}
+}
+
+
+/* MEDIA QUERY FOR PRINT */
+
+@media only print {
+    body { 
+        background-color: white;
+    }
+
+    h2, a {
+        display: none;
+    }
+
+    #front-preview-container,
+    #back-preview-container {
+        width: 148mm;
+        height: 105mm;
+    }
+
+    #back-preview-container {
+        border: 1px solid grey
+    }
+
+    #back-message-preview, #sender, #recepient {
+        font-size: 16px;
+    }
+
 }
