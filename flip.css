@@ -58,6 +58,10 @@ body {
         width: 148mm;
         height: 105mm;
     }
+    
+    #front-preview-container {
+        font-size: 20px;
+    }
 
     #back-preview-container {
         border: 1px solid grey
