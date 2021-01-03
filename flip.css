@@ -13,12 +13,18 @@ body {
 
     .flip-container:hover .flip {
         transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
     }
 
     .flip {
         position: relative;
         transition: transform 0.6s;
+        -moz-transition: transform 0.6s;
+        -webkit-transition: transform 0.6s;
         transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
     }
 
     #front-preview-container,
@@ -28,16 +34,19 @@ body {
         top: 0;
         left: 0;
         backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
     }
 
     #front-preview-container {
         z-index: 2;
+        transform: rotateY(0deg);
     }
 
     #back-preview-container {
         transform: rotateY(-180deg);
+        -moz-transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
         background-color: transparent;
     }
 }
