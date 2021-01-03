@@ -42,14 +42,16 @@
             </select>
 
             <!-- TO DO: Color picker-->
-            <label for="color-choice">Select color: </label>
-            <input type="color" name="color-choice" id="color-choice">
+<!--             <label for="color-choice">Select color: </label>
+            <input type="color" name="color-choice" id="color-choice"> -->
+            <label for="colorPicker">Color:</label>
+            <input type="color" name="color-choice" value="#ff0000" id="colorPicker">
 
             <a id="viewport2-btn" class="main-btn" href="#viewport3">Next</a>
         </div>
 
         <!-- PREVIEW -->
-        <div id="front-preview">
+        <div id="front-preview" class="print-content">
             <h2 id="your-preview">Your preview will be here:</h2>
             <div id="front-preview-container">
                 <pre id="front-message-preview"></pre>
@@ -82,7 +84,7 @@
             <a id="submit-btn" class="main-btn" href="./result.html" onclick="generateCard()">Make my postcard!</a>
         </div>
 
-        <div id="back-preview">
+        <div id="back-preview" class="print-content">
             <h2 id="your-preview-2">Your preview will be here:</h2>
             <div id="back-preview-container">
                 <div id="left-side">
