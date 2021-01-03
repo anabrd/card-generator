@@ -4,52 +4,53 @@ body {
 
 @media only screen {
 
-.flip-container {
-    margin: auto;
-    width: calc(25vw*1.4);
-    height: 25vw;
-    perspective: 1000px;
-}
+    .flip-container {
+        margin: auto;
+        width: calc(25vw*1.4);
+        height: 25vw;
+        perspective: 1000px;
+    }
 
-.flip-container:hover .flip {
-    transform: rotateY(180deg);
-}
+    .flip-container:hover .flip {
+        transform: rotateY(180deg);
+    }
 
-.flip {
-    position: relative;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
+    .flip {
+        position: relative;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
 
-#front-preview-container,
-#back-preview-container {
-    margin-top: 5%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-}
+    #front-preview-container,
+    #back-preview-container {
+        margin-top: 5%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+    }
 
-#front-preview-container {
-    z-index: 2;
-}
+    #front-preview-container {
+        z-index: 2;
+    }
 
-#back-preview-container {
-    transform: rotateY(-180deg);
-    background-color: transparent;
-}
+    #back-preview-container {
+        transform: rotateY(-180deg);
+        background-color: transparent;
+    }
 }
 
 
 /* MEDIA QUERY FOR PRINT */
 
 @media only print {
-    body { 
+    body {
         background-color: white;
         height: 100%;
     }
 
-    h2, a {
+    h2,
+    a {
         display: none;
     }
 
@@ -58,7 +59,7 @@ body {
         width: 148mm;
         height: 105mm;
     }
-    
+
     #front-preview-container {
         font-size: 20px;
     }
@@ -67,8 +68,30 @@ body {
         border: 1px solid grey
     }
 
-    #back-message-preview, #sender, #recepient {
+    #back-message-preview,
+    #sender,
+    #recepient {
         font-size: 16px;
     }
 
+}
+
+/* MOBILE AND TABLET STYLING */
+
+@media only screen and (max-width: 767px) {
+    .flip-container {
+        margin: auto;
+        width: calc(60vw*1.4);
+        height: 60vw;
+        perspective: 1000px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .flip-container {
+        margin: auto;
+        width: calc(60vw*1.4);
+        height: 60vw;
+        perspective: 1000px;
+    }
 }
