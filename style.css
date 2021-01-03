@@ -99,10 +99,9 @@ label {
     margin: auto;
 }
 
-#color-choice {
-    width: 5vw;
-    height: 8vh;
-    background-color: #efefef;
+#colorPicker {
+    width: 30%;
+    height: 4vw;
 }
 
 
@@ -328,6 +327,11 @@ a {
     #front-preview-container {
         width: calc(60vw*1.4);
         height: 60vw;
+    }
+    
+    #colorPicker {
+    width: 30%;
+    height: 4vw;
     }
 
     #back-form,
