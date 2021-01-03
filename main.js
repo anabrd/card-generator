@@ -1,6 +1,8 @@
 // GLOBAL VARIABLES START
 // For Front
 let imgLink;
+var colorPicker;
+var defaultColor = "#0000ff";
 let frontPreview = document.getElementById("front-preview-container");
 let frontMessage = document.getElementById("front-message");
 let frontMessagePreview = document.getElementById("front-message-preview");
@@ -72,4 +74,17 @@ function generateCard() {
     localStorage.setItem("borderImage", document.getElementById("back-preview-container").style.backgroundImage);
 }
 
+// Function for color picker
+window.addEventListener("load", colorPicker, false); // Once the page is loaded, call fucntion colorPicker():
+
+function colorPicker() {
+    colorPicker = document.querySelector("#colorPicker"); // .querySelectorAll looks for all the matching HTML elements.
+    colorPicker.value = defaultColor; //sets the default color to the specified value
+    colorPicker.addEventListener("input", updateFirst, false); // Event listener trigerred every time the color changes 
+}
+
+function updateFirst(event) {           //Function to update all color values in elements fitting the .querySelector parameter
+    var pre = document.querySelector("pre");
+    if (pre) {pre.style.color = event.target.value;}
+}
 // FUNCTIONS END
