@@ -20,7 +20,7 @@ body {
 
 #viewport2,
 #viewport3 {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -152,6 +152,7 @@ a {
 #font-choice option {
     font-size: 24px;
 }
+
 #font-choice option[value="Lato"] {
     font-family: 'Lato', sans-serif;
 }
@@ -180,7 +181,7 @@ a {
     height: 25vw;
     background-color: rgb(224, 224, 224);
     background-size: cover;
-    word-wrap:break-word;
+    word-wrap: break-word;
     overflow: hidden;
 }
 
@@ -205,7 +206,7 @@ a {
 #back-preview-container {
     background-color: rgb(255, 254, 254);
     display: flex;
-    font-size: 1.2vw;
+    font-size: 1.8vw;
 }
 
 #right-side,
@@ -278,8 +279,35 @@ a {
 
 @media only screen and (max-width: 767px) {
 
-    #viewport2 {
-        display: block;
+    body {
+        background-color: #eff5fd;
+        font-family: 'Lato',
+            sans-serif;
+        color: #0f307d;
+        text-align: center;
+        font-size: 2.5vw;
+    }
+
+    input,
+    select,
+    textarea {
+        margin: 1.2%;
+        width: 70%;
+        border: none;
+        border-radius: 8px;
+        font-family: 'Lato',
+            sans-serif;
+        font-size: 2.5vw;
+        color: #698eb8;
+    }
+
+    #viewport2,
+    #viewport3 {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2%;
     }
 
     #front-form,
@@ -295,14 +323,95 @@ a {
     #viewport2-btn-2 {
         display: block;
         width: 70%;
-        margin-top: 5%;
     }
 
     #front-preview-container {
         width: calc(60vw*1.4);
         height: 60vw;
     }
+
+    #back-form,
+    #back-preview {
+        width: 100%;
+    }
+
+    #viewport3-btn {
+        display: none;
+    }
+
+    #back-preview-container {
+        width: calc(60vw*1.4);
+        height: 60vw;
+
+    }
+}
+
+@media only screen and (max-width:400px) {
+    body {
+        background-color: #eff5fd;
+        font-family: 'Lato',
+            sans-serif;
+        color: #0f307d;
+        text-align: center;
+        font-size: 2.5vw;
+    }
+
+    input,
+    select,
+    textarea {
+        margin: 1.2%;
+        width: 70%;
+        border: none;
+        border-radius: 8px;
+        font-family: 'Lato',
+            sans-serif;
+        font-size: 2.5vw;
+        color: #698eb8;
+    }
+
+    #viewport2,
+    #viewport3 {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2%;
+    }
+
+    #front-form,
+    #front-preview {
+        width: 100%;
+    }
+
+    #your-preview,
+    #viewport2-btn {
+        display: none;
+    }
+
+    #viewport2-btn-2 {
+        display: block;
+        width: 70%;
+    }
+
+    #front-preview-container {
+        width: calc(60vw*1.4);
+        height: 60vw;
+    }
+
+    #back-form,
+    #back-preview {
+        width: 100%;
+    }
+
+    #viewport3-btn {
+        display: none;
+    }
+
+    #back-preview-container {
+        width: calc(60vw*1.4);
+        height: 60vw;
+
+    }
 }
 
 /***** MOBILE AND TABLET STYLING END ****/
-
