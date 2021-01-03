@@ -2,7 +2,6 @@
 // For Front
 let imgLink;
 var colorPicker;
-var defaultColor = "#0000ff";
 let frontPreview = document.getElementById("front-preview-container");
 let frontMessage = document.getElementById("front-message");
 let frontMessagePreview = document.getElementById("front-message-preview");
@@ -79,7 +78,6 @@ window.addEventListener("load", colorPicker, false); // Once the page is loaded,
 
 function colorPicker() {
     colorPicker = document.querySelector("#colorPicker"); // .querySelectorAll looks for all the matching HTML elements.
-    colorPicker.value = defaultColor; //sets the default color to the specified value
     colorPicker.addEventListener("input", updateFirst, false); // Event listener trigerred every time the color changes 
 }
 
