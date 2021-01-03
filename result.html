@@ -19,8 +19,8 @@
 
 <body onload="showCard()">
     <h2>Your Card is Here!</h2>
-    <div class="flip-container">
-        <div class=flip>
+    <div class="flip-container print">
+        <div class="flip print">
             <div id="front-preview-container" class="front print">
 
             </div>
@@ -31,7 +31,6 @@
         </div>
     </div>
     <a href="./index.html" class="scnd-btn make-another">Make another!</a>
-    <a href="./index.html" class="scnd-btn make-another">Print postcard</a>
-
+    <input type="button" class="scnd-btn" value="Print" onclick="window.print()" /> 
 </body>
 </html>
